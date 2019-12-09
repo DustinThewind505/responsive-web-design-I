@@ -1,3 +1,378 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+/* =================== first page ========================= */
+/* ====universal==== */
+
+p {
+	line-height: 1.1;
+}
+
+.big-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ====top nav==== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.home-nav a{
+    text-decoration: none;
+    margin-right: 56px;
+}
+
+#selected {
+    color: black;
+    cursor: default;
+}
+
+.home-nav {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+/* ====header==== */
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	}
+
+.header section {
+	width: 39%;
+}
+
+
+h1 {
+	font-size: 85px;
+	text-align: center;
+}
+
+.header a {
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	margin-left: 27%;
+	text-decoration: none;
+	padding: 1% 13%;
+}
+
+.header img {
+	width: 400px;
+	height: 400px;
+}
+
+/* ====first section==== */
+.first-section  {
+	width: 90%;
+	display: flex;
+	border-top: 1px solid black;
+	margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+}
+
+#features {
+margin-right: 80px;
+}
+
+#about {
+	padding-left: 20px;
+}
+
+/* ====second section==== */
+.second-section {
+    display: flex;
+    justify-content: center;
+}
+
+.second-section img {
+	width: 90%;
+}
+
+/* ===third section=== */
+.third-section {
+	width: 90%;
+	border-bottom: 1px solid black;
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.third-section div {
+	width: 29%;
+	padding: 20px 10px 20px 0;
+	
+}
+
+/* ====contact section==== */
+.fourth-section {
+	width: 960px;
+	margin: 20px 60px 0;
+}
+
+address {
+	padding: 20px 0;
+}
+
+address a {
+	color: black;
+	text-decoration: none;
+	margin-top: 20px;
+}
+
+/* ====footer, first and second page==== */
+footer {
+	width: 50%;
+	margin:  0 40%;
+	padding-bottom: 200px;
+}
+
+@media(max-width: 800px) {
+
+    .big-container {
+        width: 95%;
+    }
+
+    .home-header-right {
+        display: none;
+    }
+
+    .home-header-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-nav img {
+      position: absolute;
+      top: 2%;
+    }
+
+    .home-nav {
+        margin-top: 10%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================== second page ========================= */
+/* ====universal==== */
+
+.service-body p {
+	font-size: large;
+}
+
+/* ====nav bar==== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 30px 60px 0 60px;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#selected  {
+	color: black;
+}
+
+/* ====header==== */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px;
+}
+
+header img {
+    margin-bottom: 20px;;
+}
+
+/* ====main content==== */
+.main-container {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0 60px;
+}
+
+.main-container section {
+    width: 39%;
+    height: 39%;
+    background-color: lightgrey;
+    border: 1px solid black;
+	margin: 2% 5%;
+	padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-container section p {
+   padding-bottom: 4%;
+}
+
+.main-container button {
+	border-radius: 3px;
+	border: 1px solid black;
+	padding: 2% 10%;
+}
+
+
+/* ====bottom section==== */
+.bottom-container {
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.bottom-container section {
+    margin: 5%;
+}
+
+.bottom-container section p {
+	line-height: 1.3;
+	margin-top: 4%;
+}
+
+.bottom-container ul {
+	list-style-type: square;
+	
+}
+
+.bottom-container li {
+	margin-left: 2.5%;
+	padding: 4.5% 2.5% 0;
+}
 
