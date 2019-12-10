@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: ;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -151,7 +151,7 @@ nav a:hover {
 .middle-top {
     display: flex;
     margin-top: 10%;
-    padding: 3% 5% 3%;
+    padding: 3% 0;
     border-top: 2px solid black;
 }
 
@@ -161,7 +161,7 @@ nav a:hover {
 
 .middle-bottom {
     display: flex;
-    padding: 3% 5% 3%;
+    padding: 3% 0;
     border-bottom: 2px solid black;
 }
 
@@ -170,7 +170,6 @@ nav a:hover {
 .home-bottom {
     width: 100%;
     margin-top: 3.5%;
-    padding-left: 4%;
 }
 
 
@@ -199,19 +198,67 @@ footer {
         display: none;
     }
 
-    .middle-top {
-        padding: 3% 0 3%;
+    .middle-bottom div {
+        padding-right: 4%;
     }
 
-    .middle-bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: space-between;
+    .home-bottom {
+        padding-left: 0;
+    }
+
+    footer {
+        padding: 4% 0 2% ;
     }
 
 }
 
 
+@media(max-width: 400px) {
+
+    .big-container {
+        width: 90%;
+    }
+
+    .home-nav nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-nav a {
+        padding: 4% 400px 4%;
+        border-top: 1px solid black;
+    }
+
+    .home-nav a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .middle-top {
+        display: flex;
+        flex-direction: column;
+        padding: 8% 0;
+    }
+
+    .middle-top div {
+        padding: 7% 0;
+    }
+
+    .middle-bottom {
+        display: flex;
+        flex-direction: column;
+        padding: 8% 0;
+    }
+
+    .middle-bottom div {
+        padding: 7% 0;
+    }
+
+    footer {
+        padding: 8% 0;
+    }
+
+}
 
 
 
