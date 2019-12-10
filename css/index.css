@@ -151,7 +151,7 @@ nav a:hover {
 .middle-top {
     display: flex;
     margin-top: 10%;
-    padding: 3% 0;
+    padding: 3% 5% 3%;
     border-top: 2px solid black;
 }
 
@@ -161,7 +161,7 @@ nav a:hover {
 
 .middle-bottom {
     display: flex;
-    padding: 3% 0;
+    padding: 3% 5% 3%;
     border-bottom: 2px solid black;
 }
 
@@ -170,6 +170,7 @@ nav a:hover {
 .home-bottom {
     width: 100%;
     margin-top: 3.5%;
+    padding-left: 4%;
 }
 
 
@@ -188,11 +189,6 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 5%;
-    }
-
-    .home-nav a {
-        padding: 10% 0;
     }
     
     .home-top-left h1 {
@@ -203,16 +199,14 @@ footer {
         display: none;
     }
 
-    .middle-bottom div {
-        padding-right: 4%;
+    .middle-top {
+        padding: 3% 0 3%;
     }
 
-    .home-bottom {
-        padding-left: 0;
-    }
-
-    footer {
-        padding: 4% 0 2% ;
+    .middle-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
     }
 
 }
@@ -228,7 +222,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 5%;
     }
 
     .home-nav a {
@@ -238,14 +231,6 @@ footer {
 
     .home-nav a:last-child {
         border-bottom: 1px solid black;
-    }
-
-    .home-top-left {
-        margin: 15% 0;
-    }
-
-    .home-top-left h1 {
-        margin-bottom: 20%;
     }
 
     .middle-top {
@@ -273,6 +258,9 @@ footer {
     }
 
 }
+
+
+
 
 
 
